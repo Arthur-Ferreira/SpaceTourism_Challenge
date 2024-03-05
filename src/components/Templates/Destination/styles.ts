@@ -19,6 +19,7 @@ const SectionContainer = styled.div`
 `;
 
 const ContainerHeader = styled.div`
+  width: 100%;
   h5 {
     color: ${colors.white};
     padding-bottom: 0.375rem;
