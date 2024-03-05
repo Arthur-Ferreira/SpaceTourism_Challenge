@@ -9,6 +9,10 @@ import destinationMobileBackground from '../../assets/destination/background-des
 import destinationTabletBackground from '../../assets/destination/background-destination-tablet.jpg';
 import destinationDesktopBackground from '../../assets/destination/background-destination-desktop.jpg';
 
+import crewMobileBackground from '../../assets/crew/background-crew-mobile.jpg';
+import crewTabletBackground from '../../assets/crew/background-crew-tablet.jpg';
+import crewDesktopBackground from '../../assets/crew/background-crew-desktop.jpg';
+
 // Colors
 const colors = {
   richBlack: "#0B0D17",
@@ -25,6 +29,9 @@ const images = {
   destinationMobile: destinationMobileBackground,
   destinationTablet: destinationTabletBackground,
   destinationDesktop: destinationDesktopBackground,
+  crewMobile: crewMobileBackground,
+  crewTablet: crewTabletBackground,
+  crewDesktop: crewDesktopBackground,
 }
 
 export { colors, images };
