@@ -4,6 +4,7 @@ import Home from "./components/Templates/Home";
 import Root from "./components/Templates/Root";
 import GlobalStyle from "./components/Global";
 import Destination from "./components/Templates/Destination";
+import Crew from "./components/Templates/Crew";
 
 
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "destination",
         element: <Destination />
+      },
+      {
+        path: "crew",
+        element: <Crew />
       }
     ]
 
