@@ -15,11 +15,15 @@ const StlH2 = styled.h2`
 `;
 
 const StlH3 = styled.h3`
-  font-size: 3.5rem;
+  font-size: 1.5rem;
+
+  /* font-size: 3.5rem; */
 `;
 
 const StlH4 = styled.h4`
-  font-size: 2rem;
+  font-size: 1rem;
+
+  /* font-size: 2rem; */
 `;
 
 const StlH5 = styled.h5`
