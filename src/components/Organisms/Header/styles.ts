@@ -12,6 +12,7 @@ const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 1.5rem;
 `;
 
 export { StlHeader, HeaderContainer };
