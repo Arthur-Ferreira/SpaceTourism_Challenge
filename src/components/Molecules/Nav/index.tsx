@@ -1,3 +1,4 @@
+import { Anchor } from "../../Atoms";
 import { StlList, StlNav } from "./styles";
 
 const Nav = () => {
@@ -5,16 +6,16 @@ const Nav = () => {
     <StlNav>
       <StlList>
         <li>
-          <a href="">00 Home</a>
+          <Anchor to="/"><strong>00</strong> Home</Anchor>
         </li>
         <li>
-          <a href="">01 Destination</a>
+          <Anchor to="/"><strong>01</strong> Destination</Anchor>
         </li>
         <li>
-          <a href="">02 Crew</a>
+          <Anchor to="/"><strong>02</strong> Crew</Anchor>
         </li>
         <li>
-          <a href="">03 Technology</a>
+          <Anchor to="/"><strong>03</strong> Technology</Anchor>
         </li>
       </StlList>
     </StlNav>
