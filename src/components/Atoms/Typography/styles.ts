@@ -3,7 +3,10 @@ import { colors } from "../../Global/vars";
 import { Link } from "react-router-dom";
 
 const StlH1 = styled.h1`
-  font-size: 9.375rem;
+  font-size: 5rem;
+  margin: 1rem 0;
+
+  /* font-size: 9.375rem; */
 `;
 
 const StlH2 = styled.h2`
@@ -20,15 +23,19 @@ const StlH4 = styled.h4`
 
 const StlH5 = styled.h5`
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1rem;
   font-weight: 400;
-  letter-spacing: 4.75;
+  letter-spacing: 0.169rem;
   color: ${colors.periwinkle};
-`;
+  text-transform: uppercase;
+  
+  /* font-size: 1.75rem; */
+  /* letter-spacing: 0.295rem; */
+  `;
 
 const StlLink = styled(Link)`
   font-size: 1rem;
-  letter-spacing: 2.7;
+  letter-spacing: 0.169rem;
 `;
 
 export { StlH1, StlH2, StlH3, StlH4, StlH5, StlLink }

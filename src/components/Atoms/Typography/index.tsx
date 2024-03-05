@@ -1,9 +1,13 @@
 import type React from "react";
 import { StlH1, StlH2, StlH3, StlH4, StlH5, StlLink } from "./styles";
 
+interface ITypographyLinkProps {
+  to: string ;
+  children: React.ReactNode;
+}
+
 interface ITypographyProps {
   children: React.ReactNode;
-  to?: string ;
 }
 
 const TypographyH1: React.FC<ITypographyProps> = ({ children }) => {
@@ -26,7 +30,7 @@ const TypographyH5: React.FC<ITypographyProps> = ({ children }) => {
   return <StlH5>{children}</StlH5>;
 };
 
-const TypographyLink: React.FC<ITypographyProps> = ({ children, to }) => {
+const TypographyLink: React.FC<ITypographyLinkProps> = ({ children, to }) => {
   return <StlLink to={to} >{children}</StlLink>;
 };
 
