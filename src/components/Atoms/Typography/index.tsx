@@ -1,8 +1,8 @@
 import type React from "react";
-import { StlH1, StlH2, StlH3, StlH4, StlH5, StlLink } from "./styles";
+import { StlH1, StlH2, StlH3, StlH4, StlH5, StlLink, StlSubH1, StlSubH2 } from "./styles";
 
 interface ITypographyLinkProps {
-  to: string ;
+  to: string;
   children: React.ReactNode;
 }
 
@@ -30,8 +30,25 @@ const TypographyH5: React.FC<ITypographyProps> = ({ children }) => {
   return <StlH5>{children}</StlH5>;
 };
 
-const TypographyLink: React.FC<ITypographyLinkProps> = ({ children, to }) => {
-  return <StlLink to={to} >{children}</StlLink>;
+const TypographySubH1: React.FC<ITypographyProps> = ({ children }) => {
+  return <StlSubH1>{children}</StlSubH1>;
 };
 
-export { TypographyH1, TypographyH2, TypographyH3, TypographyH4, TypographyH5, TypographyLink };
+const TypographySubH2: React.FC<ITypographyProps> = ({ children }) => {
+  return <StlSubH2>{children}</StlSubH2>;
+};
+
+const TypographyLink: React.FC<ITypographyLinkProps> = ({ children, to }) => {
+  return <StlLink to={to}>{children}</StlLink>;
+};
+
+export {
+  TypographyH1,
+  TypographyH2,
+  TypographyH3,
+  TypographyH4,
+  TypographyH5,
+  TypographyLink,
+  TypographySubH1,
+  TypographySubH2,
+};

@@ -34,9 +34,23 @@ const StlH5 = styled.h5`
   /* letter-spacing: 0.295rem; */
   `;
 
+const StlSubH1 = styled.div`
+  font-family: "Bellefair", serif;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  `;
+
+const StlSubH2 = styled.div`
+  font-family: "Barlow Condensed", sans-serif;
+  color: ${colors.periwinkle};
+  font-size: 0.875rem;
+  letter-spacing: 0.147rem;
+  text-transform: uppercase;
+`;
+
 const StlLink = styled(Link)`
   font-size: 1rem;
   letter-spacing: 0.169rem;
 `;
 
-export { StlH1, StlH2, StlH3, StlH4, StlH5, StlLink }
+export { StlH1, StlH2, StlH3, StlH4, StlH5, StlLink, StlSubH1, StlSubH2 }
