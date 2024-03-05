@@ -36,13 +36,13 @@ const StlH5 = styled.h5`
   
   /* font-size: 1.75rem; */
   /* letter-spacing: 0.295rem; */
-  `;
+`;
 
 const StlSubH1 = styled.div`
   font-family: "Bellefair", serif;
   font-size: 1.75rem;
   text-transform: uppercase;
-  `;
+`;
 
 const StlSubH2 = styled.div`
   font-family: "Barlow Condensed", sans-serif;

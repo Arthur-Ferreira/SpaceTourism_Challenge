@@ -24,8 +24,7 @@ const ContainerHeader = styled.div`
     color: ${colors.white};
     padding-bottom: 0.375rem;
     span {
-      color: rgba(255, 255, 255, 0.3);
-      font-weight: 700;
+      opacity: 0.3;
     }
   }
 
