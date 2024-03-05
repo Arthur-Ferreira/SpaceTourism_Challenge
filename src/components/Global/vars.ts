@@ -13,6 +13,10 @@ import crewMobileBackground from '../../assets/crew/background-crew-mobile.jpg';
 import crewTabletBackground from '../../assets/crew/background-crew-tablet.jpg';
 import crewDesktopBackground from '../../assets/crew/background-crew-desktop.jpg';
 
+import technologyMobileBackground from '../../assets/technology/background-technology-mobile.jpg';
+import technologyTabletBackground from '../../assets/technology/background-technology-tablet.jpg';
+import technologyDesktopBackground from '../../assets/technology/background-technology-desktop.jpg';
+
 // Colors
 const colors = {
   richBlack: "#0B0D17",
@@ -32,6 +36,9 @@ const images = {
   crewMobile: crewMobileBackground,
   crewTablet: crewTabletBackground,
   crewDesktop: crewDesktopBackground,
+  technologyMobile: technologyMobileBackground,
+  technologyTablet: technologyTabletBackground,
+  technologyDesktop: technologyDesktopBackground,
 }
 
 export { colors, images };
