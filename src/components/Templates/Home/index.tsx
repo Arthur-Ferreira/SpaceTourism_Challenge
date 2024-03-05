@@ -1,8 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { H1, H5 } from "../../Atoms";
 import Button from "../../Atoms/Button";
 import { SectionContainer, StlSection } from "./styles";
 
 const Home = () => {
+  const navigate = useNavigate()
+  function handleNavigate() {
+    navigate("/destination")
+  }
+
   return (
     <>
       <StlSection>
@@ -18,7 +24,7 @@ const Home = () => {
             </p>
           </article>
 
-          <Button type="button" className="secondary">Explore</Button>
+          <Button type="button" className="secondary" onClick={handleNavigate}>Explore</Button>
         </SectionContainer>
       </StlSection>
     </>
