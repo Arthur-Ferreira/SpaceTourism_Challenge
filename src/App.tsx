@@ -5,6 +5,7 @@ import Root from "./components/Templates/Root";
 import GlobalStyle from "./components/Global";
 import Destination from "./components/Templates/Destination";
 import Crew from "./components/Templates/Crew";
+import Technology from "./components/Templates/Technology";
 
 
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "crew",
         element: <Crew />
+      },
+      {
+        path: "technology",
+        element: <Technology />
       }
     ]
 
