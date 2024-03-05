@@ -5,9 +5,11 @@ const Root = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
-}
+};
 
 export default Root;
