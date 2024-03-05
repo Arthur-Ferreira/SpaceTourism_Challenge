@@ -14,6 +14,7 @@ const colors = {
   richBlack: "#0B0D17",
   periwinkle: "#D0D6F9",
   white: "#FFFFFF",
+  charcoal: "#383B4B"
 }
 
 const images = {
