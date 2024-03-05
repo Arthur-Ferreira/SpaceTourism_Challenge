@@ -10,7 +10,8 @@ const StlH1 = styled.h1`
 `;
 
 const StlH2 = styled.h2`
-  font-size: 6.25rem;
+  font-size: 3.5rem;
+  /* font-size: 6.25rem; */
 `;
 
 const StlH3 = styled.h3`
