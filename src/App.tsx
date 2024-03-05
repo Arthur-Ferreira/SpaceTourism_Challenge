@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Templates/Home";
 import Root from "./components/Templates/Root";
 import GlobalStyle from "./components/Global";
+import Destination from "./components/Templates/Destination";
 
 
 
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "home",
         element: <Home />
+      },
+      {
+        path: "destination",
+        element: <Destination />
       }
     ]
 
