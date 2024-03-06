@@ -1,4 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
 import Home from "./components/Templates/Home";
 import Root from "./components/Templates/Root";
@@ -7,32 +12,16 @@ import Destination from "./components/Templates/Destination";
 import Crew from "./components/Templates/Crew";
 import Technology from "./components/Templates/Technology";
 
-
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    children: [
-      {
-        index: true,
-        element: <Home />
-      },
-      {
-        path: "destination",
-        element: <Destination />
-      },
-      {
-        path: "crew",
-        element: <Crew />
-      },
-      {
-        path: "technology",
-        element: <Technology />
-      }
-    ]
-  },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route index element={<Home />} />
+      <Route path="destination" element={<Destination />} />
+      <Route path="crew" element={<Crew />} />
+      <Route path="technology" element={<Technology />} />
+    </Route>
+  )
+);
 
 const App = () => {
   return (
