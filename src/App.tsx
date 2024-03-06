@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "home",
+        index: true,
         element: <Home />
       },
       {
@@ -31,7 +31,6 @@ const router = createBrowserRouter([
         element: <Technology />
       }
     ]
-
   },
 ]);
 
