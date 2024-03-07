@@ -4,6 +4,7 @@ import { StlH1, StlH2, StlH3, StlH4, StlH5, StlLink, StlSubH1, StlSubH2 } from "
 interface ITypographyLinkProps {
   to: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }
 
 interface ITypographyProps {
@@ -38,8 +39,8 @@ const TypographySubH2: React.FC<ITypographyProps> = ({ children }) => {
   return <StlSubH2>{children}</StlSubH2>;
 };
 
-const TypographyLink: React.FC<ITypographyLinkProps> = ({ children, to }) => {
-  return <StlLink to={to}>{children}</StlLink>;
+const TypographyLink: React.FC<ITypographyLinkProps> = ({ children, to, onClick }) => {
+  return <StlLink to={to} onClick={onClick}>{children}</StlLink>;
 };
 
 export {
