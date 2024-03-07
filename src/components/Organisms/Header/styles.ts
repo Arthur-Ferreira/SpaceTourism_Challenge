@@ -13,6 +13,12 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   padding: 1.5rem;
+
+  button {
+    @media(min-width: 768px) {
+    display: none;
+    }
+  }
 `;
 
 export { StlHeader, HeaderContainer };

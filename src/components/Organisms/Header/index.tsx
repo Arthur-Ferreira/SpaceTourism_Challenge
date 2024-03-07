@@ -1,12 +1,23 @@
 import logo from "../../../assets/shared/logo.svg";
+import { useAppDispatch } from "../../../store/hooks";
 import Button from "../../Atoms/Button";
 import { images } from "../../Global/vars";
-import Nav from "../../Molecules/Nav";
+import Nav from "../../Molecules/Nav/HeaderNav";
 import { StlHeader, HeaderContainer } from "./styles";
+import { open } from "../../../feature/menu/menuSlice";
+
+// type TAsideProps = {
+//   isOpen: boolean;
+// }
 
 const Header = () => {
-  function handleClick() {
-    console.log("Cliquei")
+// : React.FC<TAsideProps> = ({ isOpen }) => {
+  const dispatch = useAppDispatch();
+
+  // if (!isOpen) return null;
+
+  const handleOpenMenu = () => {
+    dispatch(open())
   }
 
   return (
@@ -16,7 +27,7 @@ const Header = () => {
           <img src={logo} alt="Space Tourism logo" />
         </div>
         <Nav />
-        <Button type="button" className="primary" onClick={handleClick}>
+        <Button type="button" className="primary" onClick={handleOpenMenu}>
           <img src={images.hamburgerIcon} alt="Hamburguer Menu" />
         </Button>
       </HeaderContainer>
