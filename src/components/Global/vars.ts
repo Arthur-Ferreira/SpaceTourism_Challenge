@@ -1,5 +1,6 @@
 // Images
 import hamburgerMenu from '../../assets/shared/icon-hamburger.svg';
+import closeMenu from "../../assets/shared/icon-close.svg";
 
 import homeMobileBackground from '../../assets/home/background-home-mobile.jpg';
 import homeTabletBackground from '../../assets/home/background-home-tablet.jpg';
@@ -27,6 +28,7 @@ const colors = {
 
 const images = {
   hamburgerIcon: hamburgerMenu,
+  closeIcon: closeMenu,
   homeMobile: homeMobileBackground,
   homeTablet: homeTabletBackground,
   homeDesktop: homeDesktopBackground,
