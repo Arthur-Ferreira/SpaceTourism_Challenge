@@ -18,6 +18,30 @@ import technologyMobileBackground from '../../assets/technology/background-techn
 import technologyTabletBackground from '../../assets/technology/background-technology-tablet.jpg';
 import technologyDesktopBackground from '../../assets/technology/background-technology-desktop.jpg';
 
+import moonPng from '../../assets/destination/image-moon.png';
+import moonWebp from '../../assets/destination/image-moon.webp';
+
+import marsPng from '../../assets/destination/image-mars.png';
+import marsWebp from '../../assets/destination/image-mars.webp';
+
+import europaPng from '../../assets/destination/image-europa.png';
+import europaWebp from '../../assets/destination/image-europa.webp';
+
+import titanPng from '../../assets/destination/image-titan.png';
+import titanWebp from '../../assets/destination/image-titan.webp';
+
+import douglasHurleyPng from '../../assets/crew/image-douglas-hurley.png'
+import douglasHurleyWebp from '../../assets/crew/image-douglas-hurley.webp'
+
+import markShuttleworthPng from '../../assets/crew/image-mark-shuttleworth.png'
+import markShuttleworthWebp from '../../assets/crew/image-mark-shuttleworth.webp'
+
+import victorGloverPng from '../../assets/crew/image-victor-glover.png'
+import victorGloverWebp from '../../assets/crew/image-victor-glover.webp'
+
+import anoushehAnsariPng from '../../assets/crew/image-anousheh-ansari.png'
+import anoushehAnsariWebp from '../../assets/crew/image-anousheh-ansari.webp'
+
 // Colors
 const colors = {
   richBlack: "#0B0D17",
@@ -29,18 +53,40 @@ const colors = {
 const images = {
   hamburgerIcon: hamburgerMenu,
   closeIcon: closeMenu,
+
   homeMobile: homeMobileBackground,
   homeTablet: homeTabletBackground,
   homeDesktop: homeDesktopBackground,
+
   destinationMobile: destinationMobileBackground,
   destinationTablet: destinationTabletBackground,
   destinationDesktop: destinationDesktopBackground,
+
   crewMobile: crewMobileBackground,
   crewTablet: crewTabletBackground,
   crewDesktop: crewDesktopBackground,
+
   technologyMobile: technologyMobileBackground,
   technologyTablet: technologyTabletBackground,
   technologyDesktop: technologyDesktopBackground,
+
+  moonPng: moonPng,
+  moonWebp: moonWebp,
+  marsPng: marsPng,
+  marsWebp: marsWebp,
+  europaPng: europaPng,
+  europaWebp: europaWebp,
+  titanPng: titanPng,
+  titanWebp: titanWebp,
+
+  douglasHurleyPng: douglasHurleyPng,
+  douglasHurleyWebp: douglasHurleyWebp,
+  markShuttleworthPng: markShuttleworthPng,
+  markShuttleworthWebp: markShuttleworthWebp,
+  victorGloverPng: victorGloverPng,
+  victorGloverWebp: victorGloverWebp,
+  anoushehAnsariPng: anoushehAnsariPng,
+  anoushehAnsariWebp: anoushehAnsariWebp,
 }
 
 export { colors, images };
