@@ -42,6 +42,15 @@ import victorGloverWebp from '../../assets/crew/image-victor-glover.webp'
 import anoushehAnsariPng from '../../assets/crew/image-anousheh-ansari.png'
 import anoushehAnsariWebp from '../../assets/crew/image-anousheh-ansari.webp'
 
+import LauchVehiclePortrait from '../../assets/technology/image-launch-vehicle-portrait.jpg'
+import LauchVehicleLandscape from '../../assets/technology/image-launch-vehicle-landscape.jpg'
+
+import spaceportPortrait from '../../assets/technology/image-spaceport-portrait.jpg'
+import spaceportLandscape from '../../assets/technology/image-spaceport-landscape.jpg'
+
+import spaceCapsulePortrait from '../../assets/technology/image-space-capsule-portrait.jpg'
+import spaceCapsuleLandscape from '../../assets/technology/image-space-capsule-landscape.jpg'
+
 // Colors
 const colors = {
   richBlack: "#0B0D17",
@@ -87,6 +96,13 @@ const images = {
   victorGloverWebp: victorGloverWebp,
   anoushehAnsariPng: anoushehAnsariPng,
   anoushehAnsariWebp: anoushehAnsariWebp,
+
+  LauchVehiclePortrait: LauchVehiclePortrait,
+  LauchVehicleLandscape: LauchVehicleLandscape,
+  spaceportPortrait: spaceportPortrait,
+  spaceportLandscape: spaceportLandscape,
+  spaceCapsulePortrait: spaceCapsulePortrait,
+  spaceCapsuleLandscape: spaceCapsuleLandscape,
 }
 
 export { colors, images };
