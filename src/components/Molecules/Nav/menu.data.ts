@@ -16,12 +16,12 @@ export const menuLinks: IMenu[] = [
   {
     number: '02',
     title: 'crew',
-    href: '/crew',
+    href: '/crew/douglas hurley',
   },
   {
     number: '03',
     title: 'technology',
-    href: '/technology',
+    href: '/technology/launch vehicle',
   },
 ];
 
@@ -41,24 +41,5 @@ export const destinationLinks: ILink[] = [
   {
     title: 'titan',
     href: 'titan',
-  },
-];
-
-export const crewLinks: ILink[] = [
-  {
-    title: 'commander',
-    href: 'commander',
-  },
-  {
-    title: 'mission-specialist',
-    href: 'mission-specialist',
-  },
-  {
-    title: 'pilot',
-    href: 'pilot',
-  },
-  {
-    title: 'flight-engineer',
-    href: 'flight-engineer',
   },
 ];
