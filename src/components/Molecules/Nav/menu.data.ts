@@ -1,10 +1,8 @@
-interface ILink {
+interface IMenu extends ILink {
   number: string;
-  title: string;
-  href: string;
 }
 
-export const menuLinks: ILink[] = [
+export const menuLinks: IMenu[] = [
   {
     number: '00',
     title: 'home',
@@ -13,7 +11,7 @@ export const menuLinks: ILink[] = [
   {
     number: '01',
     title: 'destination',
-    href: '/destination',
+    href: '/destination/moon',
   },
   {
     number: '02',
@@ -24,5 +22,43 @@ export const menuLinks: ILink[] = [
     number: '03',
     title: 'technology',
     href: '/technology',
+  },
+];
+
+export const destinationLinks: ILink[] = [
+  {
+    title: 'moon',
+    href: 'moon',
+  },
+  {
+    title: 'mars',
+    href: 'mars',
+  },
+  {
+    title: 'europa',
+    href: 'europa',
+  },
+  {
+    title: 'titan',
+    href: 'titan',
+  },
+];
+
+export const crewLinks: ILink[] = [
+  {
+    title: 'commander',
+    href: 'commander',
+  },
+  {
+    title: 'mission-specialist',
+    href: 'mission-specialist',
+  },
+  {
+    title: 'pilot',
+    href: 'pilot',
+  },
+  {
+    title: 'flight-engineer',
+    href: 'flight-engineer',
   },
 ];
