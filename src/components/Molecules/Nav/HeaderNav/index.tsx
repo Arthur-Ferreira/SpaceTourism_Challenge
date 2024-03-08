@@ -2,7 +2,7 @@ import { Anchor } from "../../../Atoms";
 import { StlNav, HeaderList } from "./styles";
 import { menuLinks } from "../menu.data";
 
-const Nav = () => {
+const HeaderNav = () => {
   return (
     <StlNav>
       <HeaderList>
@@ -16,4 +16,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default HeaderNav;
