@@ -10,6 +10,10 @@ declare global {
     png: string;
     webp: string;
   }
+  interface ITechnologyImages {
+    portrait: string;
+    landscape: string;
+  }
 
   interface IDestination {
     name: string;
@@ -28,7 +32,7 @@ declare global {
 
   interface ITechnology {
     name: string;
-    images: IImages;
+    images: ITechnologyImages;
     description: string;
   }
 }
