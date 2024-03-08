@@ -6,7 +6,7 @@ import { SectionContainer, StlSection } from "./styles";
 const Home = () => {
   const navigate = useNavigate()
   function handleNavigate() {
-    navigate("/destination")
+    navigate("/destination/moon")
   }
 
   return (
