@@ -13,6 +13,7 @@ import Crew from "./components/Templates/Crew";
 import Technology from "./components/Templates/Technology";
 import DestinationArticle from "./components/Organisms/CrewArticle";
 import CrewArticle from "./components/Organisms/CrewArticle";
+import TechnologyArticle from "./components/Organisms/TechnologyArticle";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +26,7 @@ const router = createBrowserRouter(
         <Route path=":name" element={<CrewArticle />} />
       </Route>
       <Route path="technology" element={<Technology />}>
-        {/* <Route path=":name" element={<DestinationArticle />} /> */}
+        <Route path=":name" element={<TechnologyArticle />} />
       </Route>
     </Route>
   )
