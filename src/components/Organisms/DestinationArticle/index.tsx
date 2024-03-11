@@ -11,9 +11,7 @@ import {
 import { useAppSelector } from "../../../store/hooks";
 
 const DestinationArticle: React.FC = () => {
-  const destination = useAppSelector(
-    (state) => state.destination.destination
-  );
+  const destination = useAppSelector((state) => state.destination.destination);
 
   if (!destination) return null;
 
