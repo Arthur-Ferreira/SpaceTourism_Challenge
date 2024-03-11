@@ -3,12 +3,10 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 import { destinations } from "./destinations.data";
 
 interface DestinationsState {
-  selected: string;
   destination: IDestination
 }
 
 const initialState: DestinationsState = {
-  selected: destinations[0].name,
   destination: destinations[0],
 };
 
@@ -17,8 +15,7 @@ const destinationSlice = createSlice({
   initialState,
   reducers: {
     selectDestination(state, action: PayloadAction<string>) {
-      state.selected = action.payload;
-      state.destination = destinations.find(dest => dest.name.toLowerCase() === action.payload) || initialState.destination;
+      state.destination = destinations.find(dest => dest.name === action.payload) || initialState.destination;
     },
   },
 });
