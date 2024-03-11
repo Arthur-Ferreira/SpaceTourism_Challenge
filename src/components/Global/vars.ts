@@ -42,8 +42,8 @@ import victorGloverWebp from '../../assets/crew/image-victor-glover.webp'
 import anoushehAnsariPng from '../../assets/crew/image-anousheh-ansari.png'
 import anoushehAnsariWebp from '../../assets/crew/image-anousheh-ansari.webp'
 
-import LauchVehiclePortrait from '../../assets/technology/image-launch-vehicle-portrait.jpg'
-import LauchVehicleLandscape from '../../assets/technology/image-launch-vehicle-landscape.jpg'
+import lauchVehiclePortrait from '../../assets/technology/image-launch-vehicle-portrait.jpg'
+import lauchVehicleLandscape from '../../assets/technology/image-launch-vehicle-landscape.jpg'
 
 import spaceportPortrait from '../../assets/technology/image-spaceport-portrait.jpg'
 import spaceportLandscape from '../../assets/technology/image-spaceport-landscape.jpg'
@@ -97,8 +97,8 @@ const images = {
   anoushehAnsariPng: anoushehAnsariPng,
   anoushehAnsariWebp: anoushehAnsariWebp,
 
-  LauchVehiclePortrait: LauchVehiclePortrait,
-  LauchVehicleLandscape: LauchVehicleLandscape,
+  lauchVehiclePortrait: lauchVehiclePortrait,
+  lauchVehicleLandscape: lauchVehicleLandscape,
   spaceportPortrait: spaceportPortrait,
   spaceportLandscape: spaceportLandscape,
   spaceCapsulePortrait: spaceCapsulePortrait,
