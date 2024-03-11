@@ -10,18 +10,18 @@ export const menuLinks: IMenu[] = [
   },
   {
     number: '01',
-    title: 'destination',
-    href: '/destination/moon',
+    title: 'destinations',
+    href: '/destinations',
   },
   {
     number: '02',
     title: 'crew',
-    href: '/crew/douglas hurley',
+    href: '/crew',
   },
   {
     number: '03',
     title: 'technology',
-    href: '/technology/launch vehicle',
+    href: '/technology',
   },
 ];
 
