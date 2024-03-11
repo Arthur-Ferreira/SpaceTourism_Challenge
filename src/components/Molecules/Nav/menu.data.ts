@@ -1,6 +1,37 @@
+import data from "../../../data.json"
+
+const { destinations, crew, technology } = data;
+
 interface IMenu extends ILink {
   number: string;
 }
+
+export const destinationLinks: ILink[] = (
+  destinations.map((char: { name: string; }) => {
+    return {
+      title: char.name,
+      href: char.name,
+    }
+  })
+)
+
+export const crewLinks: ILink[] = (
+  crew.map((char: { name: string; }) => {
+    return {
+      title: char.name,
+      href: char.name,
+    }
+  })
+)
+
+export const technologyLinks: ILink[] = (
+  technology.map((char: { name: string; }) => {
+    return {
+      title: char.name,
+      href: char.name,
+    }
+  })
+)
 
 export const menuLinks: IMenu[] = [
   {
@@ -25,21 +56,3 @@ export const menuLinks: IMenu[] = [
   },
 ];
 
-export const destinationLinks: ILink[] = [
-  {
-    title: 'moon',
-    href: 'moon',
-  },
-  {
-    title: 'mars',
-    href: 'mars',
-  },
-  {
-    title: 'europa',
-    href: 'europa',
-  },
-  {
-    title: 'titan',
-    href: 'titan',
-  },
-];
