@@ -1,63 +1,36 @@
-import { useParams } from "react-router-dom";
-import { crewInfos } from "./crew.data";
+import { useAppSelector } from "../../../store/hooks";
 
-import { Anchor, H3, H4, H5 } from "../../Atoms";
+import { H3, H4, H5 } from "../../Atoms";
+import CrewNav from "../../Molecules/Nav/CrewNav";
 
 import { Article, ArticleHeader, ArticleImage, Titles } from "./styles";
 
-interface ICrewArticle extends ICrew {}
-
 const CrewArticle: React.FC = () => {
-  const { name } = useParams<{ name: string }>();
+  const character = useAppSelector((state) => state.crew.character);
 
-  const selected: ICrewArticle | undefined = crewInfos.find(
-    (crew) => crew.name.toLowerCase() === name
-  );
-
-  if (!selected) return null;
+  if (!character) return null;
 
   return (
     <Article>
       <ArticleHeader>
         <H5>
-          <span>02 </span>Meet your crew
+          <span>02 </span>Meet your character
         </H5>
         <ArticleImage>
           <img
-            src={selected.images.png}
-            alt={`${selected.role} - ${selected.name}`}
+            src={character.images.png}
+            alt={`${character.role} - ${character.name}`}
           />
         </ArticleImage>
         <hr />
-        <ul>
-          <li>
-            <Anchor to="douglas hurley">
-              <input type="radio" name="crew" id="douglas-hurley" />
-            </Anchor>
-          </li>
-          <li>
-            <Anchor to="mark shuttleworth">
-              <input type="radio" name="crew" id="mark-shuttleworth" />
-            </Anchor>
-          </li>
-          <li>
-            <Anchor to="victor glover">
-              <input type="radio" name="crew" id="victor-glover" />
-            </Anchor>
-          </li>
-          <li>
-            <Anchor to="anousheh ansari">
-              <input type="radio" name="crew" id="anousheh-ansari" />
-            </Anchor>
-          </li>
-        </ul>
+        <CrewNav />
       </ArticleHeader>
       <div>
         <Titles>
-          <H4>{selected.role}</H4>
-          <H3>{selected.name}</H3>
+          <H4>{character.role}</H4>
+          <H3>{character.name}</H3>
         </Titles>
-        <p>{selected.bio}</p>
+        <p>{character.bio}</p>
       </div>
     </Article>
   );
