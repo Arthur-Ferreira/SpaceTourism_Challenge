@@ -2,12 +2,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import menuReducer from "../feature/menu/menuSlice";
 import destinationReducer from "../feature/destination/destinationSlice";
 import crewReducer from "../feature/crew/crewSlice";
+import technologyReducer from "../feature/technology/technologySlice";
 
 export const store = configureStore({
   reducer: {
     menu: menuReducer,
     destination: destinationReducer,
     crew: crewReducer,
+    technology: technologyReducer,
   }
 })
 
