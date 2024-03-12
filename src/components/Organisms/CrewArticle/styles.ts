@@ -7,7 +7,7 @@ const Article = styled.article`
   flex-direction: column;
   align-items: center;
 `;
-  
+
 const ArticleHeader = styled.div`
   width: 100%;
   h5 {
@@ -34,15 +34,14 @@ const ArticleHeader = styled.div`
 
 
 const ArticleImage = styled.div`
-  width: 100%;
-  max-width: 11.07rem;
-  height: 100%;
-  margin: 0 auto;
-  padding-top: 1rem;
+    width: 14.125rem;
+    height: 15.938rem;
+    margin: 0 auto;
 
   img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
 
 `;
