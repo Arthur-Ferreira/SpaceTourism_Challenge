@@ -43,7 +43,6 @@ const ArticleImage = styled.div`
     height: 100%;
     object-fit: contain;
   }
-
 `;
 
 const Titles = styled.div`
