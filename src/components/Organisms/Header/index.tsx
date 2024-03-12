@@ -1,8 +1,8 @@
 import logo from "../../../assets/shared/logo.svg";
 import { useAppDispatch } from "../../../store/hooks";
-import Button from "../../Atoms/Button";
+import { Button } from "../../Atoms/Button";
 import { images } from "../../Global/vars";
-import Nav from "../../Molecules/Nav/HeaderNav";
+import Nav from "../../Molecules/HeaderNav";
 import { StlHeader, HeaderContainer } from "./styles";
 import { open } from "../../../feature/menu/menuSlice";
 
@@ -11,14 +11,14 @@ import { open } from "../../../feature/menu/menuSlice";
 // }
 
 const Header = () => {
-// : React.FC<TAsideProps> = ({ isOpen }) => {
+  // : React.FC<TAsideProps> = ({ isOpen }) => {
   const dispatch = useAppDispatch();
 
   // if (!isOpen) return null;
 
   const handleOpenMenu = () => {
-    dispatch(open())
-  }
+    dispatch(open());
+  };
 
   return (
     <StlHeader>
