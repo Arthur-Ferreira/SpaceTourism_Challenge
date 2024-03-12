@@ -6,7 +6,11 @@ const StlSection = styled.section`
   background: url(${images.destinationMobile}) no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  
+  @media (min-height: 46.3rem) {
+    height: 100vh;
+  }
 `;
 
 const SectionContainer = styled.div`
