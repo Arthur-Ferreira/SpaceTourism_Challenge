@@ -1,6 +1,8 @@
-import { useAppSelector } from "../../../store/hooks";
+import { useAppDispatch, useAppSelector } from "../../../store/hooks";
+import { selectTechnology } from "../../../feature/technology/technologySlice";
+import { technologyLinks } from "../../Molecules/Nav/menu.data";
 import { H3, H5 } from "../../Atoms";
-import TechnologyNav from "../../Molecules/Nav/TechnologyNav";
+import Nav from "../../Molecules/Nav";
 
 import {
   Article,
@@ -9,12 +11,18 @@ import {
   ArticleBody,
   Titles,
 } from "./styles";
+import { TechButton } from "../../Atoms/Button";
 
 const TechnologyArticle: React.FC = () => {
-
-  const gear = useAppSelector((state) => state.technology.gear)
+  const dispatch = useAppDispatch();
+  let count = 1;
+  const gear = useAppSelector((state) => state.technology.gear);
 
   if (!gear) return null;
+
+  const handleSelect = (selectedButton: string) => {
+    dispatch(selectTechnology(selectedButton));
+  };
 
   return (
     <Article>
@@ -27,7 +35,18 @@ const TechnologyArticle: React.FC = () => {
         </HeaderImage>
       </ArticleHeader>
       <ArticleBody>
-        <TechnologyNav />
+        <Nav>
+          {technologyLinks.map((link) => (
+            <li key={link.title}>
+              <TechButton
+                type="button"
+                onClick={() => handleSelect(link.title)}
+              >
+                {count++}
+              </TechButton>
+            </li>
+          ))}
+        </Nav>
         <Titles>
           <H5>The terminology...</H5>
           <H3>{gear.name}</H3>

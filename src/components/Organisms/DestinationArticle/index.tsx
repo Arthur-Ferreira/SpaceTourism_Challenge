@@ -1,5 +1,10 @@
 import { H2, H5, SubH1, SubH2 } from "../../Atoms";
-import DestinationNav from "../../Molecules/Nav/DestinationNav";
+import { DestButton } from "../../Atoms/Button";
+import Nav from "../../Molecules/Nav";
+
+import { destinationLinks } from "../../Molecules/Nav/menu.data";
+import { useAppDispatch, useAppSelector } from "../../../store/hooks";
+import { selectDestination } from "../../../feature/destination/destinationSlice";
 
 import {
   Article,
@@ -8,10 +13,15 @@ import {
   ArticleBody,
   SubHeading,
 } from "./styles";
-import { useAppSelector } from "../../../store/hooks";
 
 const DestinationArticle: React.FC = () => {
+  const dispatch = useAppDispatch();
+
   const destination = useAppSelector((state) => state.destination.destination);
+
+  const handleSelect = (selectedButton: string) => {
+    dispatch(selectDestination(selectedButton));
+  };
 
   if (!destination) return null;
 
@@ -24,7 +34,18 @@ const DestinationArticle: React.FC = () => {
         <HeaderImage>
           <img src={destination.images.png} alt={destination.name} />
         </HeaderImage>
-        <DestinationNav />
+        <Nav>
+          {destinationLinks.map((link) => (
+            <li key={link.title}>
+              <DestButton
+                type="submit"
+                onClick={() => handleSelect(link.title)}
+              >
+                {link.title}
+              </DestButton>
+            </li>
+          ))}
+        </Nav>
       </ArticleHeader>
       <ArticleBody>
         <H2>{destination.name}</H2>
