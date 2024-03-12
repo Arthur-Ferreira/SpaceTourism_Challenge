@@ -6,7 +6,7 @@ const StlAside = styled.aside`
   position: fixed;
   top: 0;
   right: 0;
-
+  z-index: 1;
   /* Add the blur effect */
   backdrop-filter: blur(10px);
   
